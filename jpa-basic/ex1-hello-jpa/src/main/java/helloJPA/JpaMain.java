@@ -16,12 +16,13 @@ public class JpaMain {
         tx.begin();
 
         try {
+
 //            Member member = new Member();
 //
 //            member.setId(2L);
 //            member.setName("HelloB");
-
-//            Member findMember = em.find(Member.class, 1L);
+//
+//            Member findMem8ber = em.find(Member.class, 1L);
 //            findMember.setName("HelloJPA");
 
 //            List<Member> result = em.createQuery("select m from Member as m", Member.class)

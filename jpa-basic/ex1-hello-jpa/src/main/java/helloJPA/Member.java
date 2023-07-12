@@ -10,11 +10,17 @@ public class Member {
     public Member() {
     }
 
-    @Id
+    @Id @GeneratedValue
+    @Column(name = "MEMBER_ID")
     private Long id;
-    @Column(name = "name", nullable = false)
+    @Column(name = "USERNAME", nullable = false)
     private String name;
     private Integer age;
+    @ManyToOne
+    @JoinColumn(name = "TEAM_ID")
+    private Team team;
+//    @Column(name = "TEAM_ID")
+//    private Long teamId;
     @Enumerated(EnumType.STRING)
     private RoleType roleType;
     @Temporal(TemporalType.TIMESTAMP)
